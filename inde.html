@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h1>
+         CATALOGO DE PRODUCTOS ESCOLARES
+    </h1>
+
+    <form method="POST" acton="/update">
+    <label for="numero">INGRESE PRODUCTO:</label>
+    <div class="form-group border border-warning">
+        <div class="form-group"></div>
+        <label for="Nombre">Nombre: </label>
+    <input  class="form-control" type="text" id="txtNombre" placeholder="Ingresa el nombre">
+       <label for="Cantidad">Cantidad: </label>
+    <input class="form-control" type="number" id="txtCantidad" placeholder="Ingresa la cantidad">
+       <label for="Costo">Costo: </label>
+    <input  class="form-control" type="number" id="txtCosto" placeholder="Ingresa el costo">
+        <label for="Color">Color: </label>
+    <input  class="form-control" type="text" id="txtColor" placeholder="Ingresa el color">
+         <label for="ID">ID: </label>
+    <input class="form-control" type="number" id="txtID" placeholder="Ingresa el ID">
+
+      <br>
+    <form method="POST" acton="/update">
+    <button type="button" id="btnAgregar" class="btn btn-info">Agregar</button>
+    <button type="button" id="btnConsultar" class="btn btn-info">Leer</button>
+   <!-- <button type="button" id="btnDelete"  class="btn btn-info" >Eliminar</button> -->
+
+    </form>
+    <div id="details"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
